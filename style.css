@@ -1,0 +1,53 @@
+style
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-family: sans-serif;
+}
+main{
+    position:relative;
+    width: 500px;
+    height: 300px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(53, 25, 42);
+}
+
+button{
+    position: absolute;
+    width: 120px;
+    padding: 0.5rem 2rem;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px blueviolet;
+}
+
+button:nth-child(1){
+    border: 1px solid rgb(129, 10, 82);
+    left: 100px;
+    background-color: rgb(17, 67, 231);
+    color: white;
+}
+button:nth-child(2){
+    right: 100px;
+    background-color: rgb(236,13,13 );
+    color:white;
+    transition: all 0.3s case-out;
+}

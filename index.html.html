@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love is just a lie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="download.jpeg">
+</head>
+<body>
+    <main>
+    <h2>I LOVE YOU:3<br/> Do you love me????</h2>
+    <div class="but-container">
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+    </div>
+    </main>
+    <script>
+        const yesButton = document.querySelector(".yes");
+        const noButton = document.querySelector(".no");
+        const text = document.querySelector("h2");
+
+        noButton.addEventListener("mouseover", function(){
+        function getRandomNumber(){
+            return Math.floor(Math.random()*301); // fixed typo here
+        }
+            noButton.style.left = getRandomNumber() + "px";
+            noButton.style.top = getRandomNumber() + "px";
+        });
+    yesButton.onclick =() => (text.innerText = "I love you too><. Now chat to me:3")
+    </script>
+</body>
+</html>
